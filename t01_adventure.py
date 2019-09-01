@@ -85,7 +85,7 @@ if Choice == "Yes":
     #
     sleep(delay)
 elif Choice == "no":
-    print("")
+    print("You choose to hastily run away from the boulder and you begin to lose your footing.")
     sleep(delay)
     print("You trip and fall forward breaking your neck in the most boring possible fashion")
     dead = True
