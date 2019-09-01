@@ -67,11 +67,36 @@ if dead == True:
     quit()
 
 #########################################################################################################
-# TODO Add your part of the story here. Keep in mind you may NOT be coming right after the example above.
+print("You see a dim light glowing behind a loose boulder. Do you choose to "
+      "investigate?")
+Choice=input("[Yes/no/leave]")
+sleep(delay)
 
+if Choice == "Yes":
+    print ("You place your hand against the boulder and it dissipates into the air like fine mist. Behind it you see "
+           "a giant sword bigger than most men.")
+    sleep(delay)
+    print("A giant humanoid creature enters your view and begins to grab the sword.")
+    sleep(delay*2)
+    print("He swings the sword in your direction causing the timid ceiling to collapse in between you saving yourself "
+          "from the giant beast. ")
+    print("You are safe for now, and you begin to search for a way out..")
+    #
+    #
+    sleep(delay)
+elif Choice == "no":
+    print("")
+    sleep(delay)
+    print("You trip and fall forward breaking your neck in the most boring possible fashion")
+    dead = True
+else:
+    print("You decide against your gut and move away from the glowing boulder.")
+    sleep(delay)
+    print("You leave the cave by following the sounds of wilderness outside. You begin to hear some disgruntled shuffling in the cave as you leave.")
+    if dead == True:
+        print("You Died! Try again.")
+    quit()
 
-
-# TODO Don't forget to check if your user is dead at the end of your chapter!
 
 
 #########################################################################################################
